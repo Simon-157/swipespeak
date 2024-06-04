@@ -1,0 +1,2 @@
+use a version of 3.*.*
+update the queries in manifest file to use TT Service
