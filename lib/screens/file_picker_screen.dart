@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:swipe_speak/screens/playgroud_screen.dart';
 import 'package:swipe_speak/widgets/file_picker_widget.dart';
+import 'package:swipe_speak/utils/pdf_parser.dart';
 import 'dart:io';
 
-import 'package:swipe_speak/utils/pdf_parser.dart';
-
 class FilePickerScreen extends StatefulWidget {
+  const FilePickerScreen({super.key});
+
   @override
   _FilePickerScreenState createState() => _FilePickerScreenState();
 }
@@ -25,7 +26,7 @@ class _FilePickerScreenState extends State<FilePickerScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Select a file'),
+        title: const Text('Select a file'),
       ),
       body: Center(
         child: FilePickerWidget(onFilePicked: onFilePicked),

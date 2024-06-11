@@ -1,5 +1,4 @@
 import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:swipe_speak/utils/tts.dart';
 import 'package:swipe_speak/widgets/image_picker.dart';
